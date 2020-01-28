@@ -1,0 +1,264 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Databases I &mdash; TEDI London</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Free HTML5 Website Template by freehtml5.co" />
+	<meta name="keywords" content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
+	<meta name="author" content="freehtml5.co" />
+
+	<!-- 
+	//////////////////////////////////////////////////////
+
+	FREE HTML5 TEMPLATE 
+	DESIGNED & DEVELOPED by FreeHTML5.co
+		
+	Website: 		http://freehtml5.co/
+	Email: 			info@freehtml5.co
+	Twitter: 		http://twitter.com/fh5co
+	Facebook: 		https://www.facebook.com/fh5co
+
+	//////////////////////////////////////////////////////
+	 -->
+
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,700,800" rel="stylesheet">	 -->
+	<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="../css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="../css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="../css/bootstrap.css">
+	<!-- Flexslider  -->
+	<link rel="stylesheet" href="../css/flexslider.css">
+
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="../css/style.css">
+
+	<!-- Modernizr JS -->
+	<script src="../js/modernizr-2.6.2.min.js"></script>
+
+	<!-- HTML Example -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="../css/html-example.css" />
+
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	</head>
+	<body>
+		
+	<div class="fh5co-loader"></div>
+	
+	<div id="page">
+		<nav class="fh5co-nav" role="navigation">
+			<div class="top-menu">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-2">
+							<div id="fh5co-logo"><a href="../index.html">TEDI<span>.</span></a></div>
+						</div>
+						<div class="col-xs-10 text-right menu-1">
+							<ul>
+								<li><a href="../index.html">Home</a></li>
+								<li class="active has-dropdown"><a href="index.html">Lessons</a>
+									<ul class="dropdown">
+									<li><a href="1.html">Getting Acquainted</a></li>
+									<li><a href="2.html">Keys</a></li>
+									<li><a href="3.html">Building Databases</a></li>
+									<li><a href="4.html">Databases Every Day</a></li>
+								</ul>
+								</li>
+								<li class="btn-cta"><a href="../assessment.html"><span>Assessment</span></a></li>
+							</ul>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</nav>
+
+
+
+		<div id="fh5co-wireframe">
+		<div class="container">
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+					<h2>Keys</h2>
+				</div>
+			</div>
+			<div class="row">
+			
+					<p> 	<div class = "col-md-12">
+							A key is a value that uniquely identifies a record in a table. A key could be a single column of a combination of several columns. 
+
+							<br>
+							Keys allow us to access data in a database. They also allow us to create relationships between tables. 
+							
+							
+							<br>
+							Consider the following table: 
+							You have a database (table) that contains every students grades for the year. The table has a bunch of columns (fields) including StudentID, Year, Gender and Grade. A TEDI London staff members needs to access a students grade. <br>
+							
+					
+							<img src = "../images/A.png"><br>
+
+ 
+							So they approach the student services administration and ask the following:
+
+							“I need to know the grade of a student in my third year class.”
+
+							“They’re a female student”
+
+							“Their student ID is 1257” 
+
+							When the staff searches for all third year students, they aren't able to find the grade. <br>
+
+							<img src = "../images/B.png"> <br>
+
+							When the staff member then searches for all female students, they still arent able to track down the specific student. <br>
+
+							<img src = "../images/C.png"> <br> 
+
+							However once the staff member enters the student's ID, they are able to identify them immediately. This field uniquely identifies each student, and is therefore a key. <br>
+							<img src = "../images/D.png"><br>
+
+
+
+
+
+					</p>
+		
+
+				</div>
+
+
+
+			</div> <!-- End of the row !--> 
+
+			<div class = "row">
+				<h3>
+
+					Primary, Composite and Foreign Keys
+
+				</h3>
+
+			</div> <!-- End of the row !--> 
+
+			<div class = "row">
+
+				<h4> Primary Keys </h4> 
+
+				A primary key is a field that uniquely identifies a record. In the example above, the key for Customer Details is CustomerID and the key for Purchases is PurchaseID. <br><br>
+
+				A primary key MUST be unique - that means, no two records can have the same value for their primary key. A good rule of thumb is to use an integer in this space that can be incremented by one each time. Alternatively, some databases may use a unique string for example an email address. This is appropriate as no two users will ever have the same email address. Some databases use a combination of surname and last name. For example Emma Banks would be Ebanks. However, numbers often make their way into these fields when you have two users finding themselves with the similar names.
+				For example Emma Banks and Elliot Banks. <br><br>
+
+				Identify which field in this table would be an appropriate primary key? <br> <br>
+
+				Age <br>
+				Eye Colour <br>
+				First Name <br>
+				Last Name <br>
+				Tax File Number <br>
+				Bank Balance <br>
+				Shoe Size <br>
+				<br><br>
+
+
+				<h4> Composite Keys </h4> 
+				A composite key is a primary key composed of multiple columns used to identify a record uniquely. <br>
+
+				Below are a few real life examples that will help you understand what a key is: 
+				Conversation Excerpt: <br>
+				Mum: “Who were you with today?”<br>
+				Me: “A friend”<br>
+				Mum: “Which friend?”<Br>
+				Me: “A friend from school”<br>
+				Mum: “Which friend from school?”<br>
+				Me :”A friend from my history class”<br>
+				Mum:”Who?”<br>
+				Me: “Jackson”<br>
+				Mum: “Jackson who?”<br>
+				Me: “Jackson Perreria”<br>
+				Mum: “Oh, Jackson - Maria’s Son?”<br>
+				Me:”Yup.”<br>
+
+				Which piece of information do you believe was the primary key? <br>
+
+				If you're unsure, let's look at this visually. <br>
+
+				"A friend" <br> Below is a table that stores all of Vivian's friends. 
+				<img src ="../images/Q.png"><br>
+
+				“A friend from school” <br> In this database, that instruction effectively rules out all of Vivian’s friends from UNSW, ASU and Kings College London, as she attends TEDI. However, it is not yet clear which friend she is referring to. <br>
+
+
+				<img src ="../images/R.png"><br>
+
+				"A friend from History Class" <br>
+				Narrowing down the class, decreases the scope - however there are still several options. <br>
+				<img src ="../images/S.png"><br>
+				"Jackson" <br>
+				There are still 2 options that fulfill this brief. <br>
+				<img src ="../images/T.png"><Br>
+				“Jackson Perreria” <br> 
+				<img src ="../images/U.png"><br>
+
+				As you can see, they key is actually two columns when used in combination. First Name and Last Name. These two columns together are able to uniquely identify each row.  <br>
+
+
+			</div> 
+
+
+			<div class="row">
+				<div class="col-md-16 animate-box">
+
+					
+					<p><a class="btn btn-primary btn-lg btn-demo" href="3.html">Building Databases</a>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	</div>
+
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up22"></i></a>
+	</div>
+	
+	<!-- jQuery -->
+	<script src="../js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="../js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="../js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="../js/jquery.waypoints.min.js"></script>
+	<!-- Flexslider -->
+	<script src="../js/jquery.flexslider-min.js"></script>
+	<!-- Main -->
+	<script src="../js/main.js"></script>
+	<!-- Reveal -->
+	<script src="../js/reveal.js"></script>
+
+	</body>
+</html>
